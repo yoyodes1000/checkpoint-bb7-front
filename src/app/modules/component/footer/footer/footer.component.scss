@@ -1,0 +1,14 @@
+div.footer {
+    display:flex;
+    justify-content: space-evenly;
+    background-color: #b2b2b2;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+div.footer a img {
+    height: 50px;
+    width: auto;
+}
