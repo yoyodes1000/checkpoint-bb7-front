@@ -1,0 +1,123 @@
+ <table>
+    <thead>
+        <tr>
+            <th class="colonne1">Max</th>
+            <th class="colonne2">Poste</th>
+            <th class="colonne3">M</th>
+            <th class="colonne4">F</th>
+            <th class="colonne5">Ag</th>
+            <th class="colonne6">CP</th>
+            <th class="colonne7">Ar</th>
+            <th class="colonne8">Competences</th>
+            <th class="colonne9">Coût</th>
+            <th class="colonne10">P</th>
+            <th class="colonne11">S</th>
+            <th class="colonne12">Enroler</th>
+        </tr>
+    </thead>
+        <tbody>
+            <!-- <tr>
+                <td>12</td>
+                <td>Wood Elf Linemen</td>
+                <td>7</td>
+                <td>3</td>
+                <td>2+</td>
+                <td>4+</td>
+                <td>8+</td>
+                <td> </td>
+                <td>70000</td>
+                <td>AG</td>
+                <td>PF</td>
+                <td>
+                    <img src="./../../../../assets/images/add.png" alt="ajouter ce joueur">
+                    <img src="./../../../../assets/images/annuler.png" alt="retirer ce joueur">
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Throwers</td>
+                <td>7</td>
+                <td>3</td>
+                <td>2+</td>
+                <td>2+</td>
+                <td>8+</td>
+                <td>Passe</td>
+                <td>95000</td>
+                <td>AGP</td>
+                <td>F</td>
+                <td>
+                    <img src="./../../../../assets/images/add.png" alt="ajouter ce joueur">
+                    <img src="./../../../../assets/images/annuler.png" alt="retirer ce joueur">
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Catchers</td>
+                <td>8</td>
+                <td>2</td>
+                <td>2+</td>
+                <td>4+</td>
+                <td>4+</td>
+                <td>Réception, Esquive</td>
+                <td>90000</td>
+                <td>AG</td>
+                <td>PF</td>
+                <td>
+                    <img src="./../../../../assets/images/add.png" alt="ajouter ce joueur">
+                    <img src="./../../../../assets/images/annuler.png" alt="retirer ce joueur">
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Wardancers</td>
+                <td>8</td>
+                <td>3</td>
+                <td>2+</td>
+                <td>4+</td>
+                <td>8+</td>
+                <td>Blocage, Esquive, Saut</td>
+                <td>125000</td>
+                <td>AG</td>
+                <td>PF</td>
+                <td>
+                    <img src="./../../../../assets/images/add.png" alt="ajouter ce joueur">
+                    <img src="./../../../../assets/images/annuler.png" alt="retirer ce joueur">
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Loren Forest Treeman</td>
+                <td>2</td>
+                <td>6</td>
+                <td>5+</td>
+                <td>5+</td>
+                <td>11+</td>
+                <td>Solitaire (4+), Prendre Racine, Châtaigne (+1), Stabilité, Bras Musclé, Crâne Epais, Lancer de Coéquipier</td>
+                <td>120000</td>
+                <td>F</td>
+                <td>AG</td>
+                <td>
+                    <img src="./../../../../assets/images/add.png" alt="ajouter ce joueur">
+                    <img src="./../../../../assets/images/annuler.png" alt="retirer ce joueur">
+                </td>
+            </tr> -->
+
+            <tr *ngFor="let player of allPlayers$ | async">
+                <td>{{ player.nbMax }}</td>
+                <td>{{ player.poste }}</td>
+                <td>{{ player.compMvmt }}</td>
+                <td>{{ player.compForce }}</td>
+                <td>{{ player.compAgilite }}</td>
+                <td>{{ player.compPasse }}</td>
+                <td>{{ player.compArmure }}</td>
+                <td>{{ player.comp }}</td>
+                <td>{{ player.cout }}</td>
+                <td>{{ player.principale }}</td>
+                <td>{{ player.secondaire }}</td>
+                <td>
+                    <img src="./../../../../assets/images/add.png" alt="ajouter ce joueur">
+                    <img src="./../../../../assets/images/annuler.png" alt="retirer ce joueur">
+                </td>
+            </tr>
+        </tbody>
+    </table>
